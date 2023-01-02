@@ -43,7 +43,7 @@ jobs:
 
       - name: Install dependencies (windows)
         if: startsWith(matrix.os, 'windows')
-        uses: egor-tensin/setup-cygwin@v3
+        uses: egor-tensin/setup-cygwin@v4
         with:
           platform: x64
           packages: curl git zsh
@@ -159,7 +159,7 @@ jobs:
 
       - name: Install dependencies (windows)
         if: startsWith(matrix.os, 'windows')
-        uses: egor-tensin/setup-cygwin@v3
+        uses: egor-tensin/setup-cygwin@v4
         with:
           platform: x64
           packages: curl git zsh
